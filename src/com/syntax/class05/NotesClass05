@@ -1,0 +1,51 @@
+TestNG Class 05, January 9, 2020
+
+Maven is built in automation.
+POM xml = project object model. ... of maven project. Inside this file we specify configuration properties and
+dependancy
+Dependancies come from Mavan Repository
+
+Why we need property file = it is a file that have information and data adn stored in teh form of key and value.
+
+We develop utility file that will be reading property file.
+
+We prefer switch because when checks equality, it looks easy and neat.
+
+What is framework?
+
+Improve maintenability of code and reduce code redundancy
+
+is a code organized structure for making code maintenance simpler, and code readability better
+rules adn tools fro software (websites) testing.
+
+JAVA = Programming language
+Selenium = automates web application
+TestNG = testing framework, annotation based tool. it can generate reports, it organizes oru tests, executges tests in paralel mode.
+it can automate batch cases.
+GIT = version control. With help of GIT we can easily share our codes.
+Maven is build automation tool. Maven will help automoate build process from creating structure, wirting codes,
+executing and deploying. Will help us automotate these dependancies. Maven will help these dependances.
+
+
+
+Framework class 2
+
+Sprint #3
+US9890: Admin user should be able to login into HRMS
+
+US8809: System should show error message when invalid login is performed
+- empty username and valid password --  username cannot be empty
+- valid username and empty password --  password cannot be empty
+- valid username and invalid password --  password is invalid
+
+How we implement POM?
+using @FindBy annotation and page factory
+
+why we are extending common methods, so that we can easily methods.
+
+PageInitialiser = in this class we initialize all the objects
+BaseClass = driver. it is a super class for all of them
+CommonMethods = common methods
+Test
+
+

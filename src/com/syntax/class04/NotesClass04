@@ -1,0 +1,77 @@
+
+Class 04, December 27, 2020
+
+DataProvider - allow to perform DDT (data driver testing)
+    testing same functionality with different sets of data.
+    data and code are independent.
+    If we make any changes in the data, our code in test does not get affected.
+
+Groups in TestNG:
+we can group our testing ie: we can group based on functionality (like payment, search etc)
+we can test as a group with help of groups = "regression"
+
+groups in TestNG = allow to group test cases:
+based on type of testing (smoke, regression, database etc)
+based on the functionality( login, search, payment etc)
+or based on sprints (sprint 1, sprint 5 etc)
+
+1. @DataProvider is a  method that will return 2 dimensional array.
+2. identify which test method will be suing it @Test (dataProvider = "name")
+
+
+
+Listeners: it is features that listens to or keeps track any event that happens during test execution:
+                test starts
+                test pass
+                test fail
+                test skipped
+                test finished
+
+It allows to add additional behaviors.
+
+It modifies default testng behaviours.
+Many listeners are available in TestNG.
+
+How to implement:
+
+1. Create a listener class that will implement ITestListener interface
+2. Provide implementation to the methods you want
+3. Create xml file
+
+What is data driven testing = when we perform execution. We pass different testing parameters.
+
+JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0], click();", menu);
+HW: TestNG and use assertions
+TC 1: HRMS blank password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and leave password field empty
+Click on login button
+Verify error message with text "Password cannot be empty" is displayed
+TC 2: HRMS blank username and password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Leave username and password field empty
+Click on login button
+Verify error message with text "Username cannot be empty" is displayed
+TC 2: HRMS invalid credentials validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and wrong password
+Click on login button
+Verify error message with text "Invalid credentials" is displayed
+TC:4 --> do on selenium project
+Go to http://www.uitestpractice.com/
+interact with drag and drop, iframe, double click
+click on home
+delete one user from the table
+go to the next link
+click on the ajax link and wait for the text
+verify that the text is displayed
+go to Form
+and fill out everything
+go to widgets
+upload any file and verify it is uploaded
+go to actions and perform all the necessary actions
+go to SwitchTo
+work with alerts and frames
+go to select
+perform actions on all dropdowns

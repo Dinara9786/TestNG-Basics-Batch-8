@@ -1,0 +1,39 @@
+
+Class 03
+
+ASSERTIONS in TestNG:
+
+Hard Assertion = > if fails then the entire execution will stop. We use assert class.
+
+Soft Assertion = > SoftAssert class; it collects errors during the test adn does not throw exception until we call
+method .assertAll();
+if assertion fails, it will continue execution.
+
+testng xml = serves configuration file. It configuration file for our testng project.
+We can contol our entire execution.
+Configuration file in testNG, with help of whihc we can define which testmethods, classes,
+packages we want to execute.
+
+Groups:
+to implement:
+we can group our test cases.
+smoke case is when to verify that the environment is there and important functionality is working.
+
+1. @Test(group = "smoke"/"login"/"sprint1");
+2. will specify <groups> in testng xml file
+
+BeforeMethod vs BeforeTest:
+
+BeforeMethod: The annotated method will be run before each test method.
+BeforeTest: The annotated method will be run before any test depends on xml file <test> tag is run.
+
+Another feature in TestNG is DATAPROVIDER
+
+DataProvider in TestNG is a feature that allows to perfomr DDT (data driven testing)
+DataProvider is a method taht will return us an object of 2Dimensional Array
+
+How to implement it:
+1.
+
+
+

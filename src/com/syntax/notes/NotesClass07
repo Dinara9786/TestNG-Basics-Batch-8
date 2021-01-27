@@ -1,0 +1,17 @@
+Maven = build automation tool
+helps to build basic project structure
+namange dependencies
+execute test from commnd line
+
+TestNG = testing tool
+    to group tests
+    to perform batch testing
+    to get reports (time, number of passed vs failed tests)
+
+POM = design pattern manage.maitain page element
+    for everypage in the application we create a separate Java Class
+    (using @Find By and PageFactory)
+
+DDT = testing same functionality using different sets fo data
+    separate source code from data, so when we change data it coes not affect our source code
+    HOW (how we implement)  =  through DataProvider and Excel

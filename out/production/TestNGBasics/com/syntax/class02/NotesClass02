@@ -1,0 +1,65 @@
+TestNG Class 2, December 23, 2020
+
+TestNG is annotation based tools.frameworks
+
+@Test = is a main annotation adn it marks our method as Test method.
+
+TestNG has annotation for pre-condition, that is defined with @Before(method, class).
+TestNG has annotation for post-condition, that is defined with @After(method, class).
+
+US 17667: Error Message "Invalid Credentials"
+
+TestNG Parameters:
+- priority
+    priority = 0 --> is set by default
+    priority = 1 --> we are defining a priority of the test
+
+- enabled = if false = this test will be skipped and will not be executed. will skip the execution
+when we report a bug we create a jira ticket = steops to reproduced, description of bug, priority, severity.
+Before enything we should re-test.
+
+    enabled = true - is a default behaviour
+    enabled = false -- > if we want to skip specific test
+
+When exception is thrown , first of all execution will be stopped and TestNG will mark as test failed.
+
+US876876: Error message "Invalid credentials" shoudl be displayed when user enters invalid credentials
+
+ASSERTIONS in TESTNG (validation)
+
+we use Assert Class
+    Assert.assertTrue();
+    Assert.assertEquals();
+
+    Assert is basically our exception. Error message will be thrown.
+
+    Any time the assertion fails, the codes will stop.
+    we use assertion in validation, and do not use if else condition
+
+2 types of assertion
+
+
+- hard assertion is useful if we have 1 validation. And if it fails, the whole execution stops.
+assert.equals = we compare strings
+assert.true = boolean = isDisplayed, or isEnabled etc we can put custom message as well, which will be
+printed in the console if test will fail.
+
+- soft assertion = > will perform the validation, it will collect if assertions failed, but not stops running.
+This assertion is useful if we have multiple validation.
+at the end we need to call method .assertAll();
+
+In testing we should try to develop cases that run independently. Depends on the company.
+
+Another feature in TestNG = > is Batch Execution when multiple tests are executed together => XML file =
+testng.xml file.
+
+actual message = what we get
+expected message = when we see in the website
+
+ Assert.assertEquals(invalidCredentialsText, expectedErrorText, "Not correct message is displayed. ");
+ if test fails , the custom message will be displayed ("Not correct message is displayed").
+ If test passes, no message will be displayed.
+
+FOR VALIDATION WE SHOULD USE ASSERTION
+
+DependsONMethods =

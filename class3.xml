@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Class 2 Suite">
+    <test name="Class 2 Test">
+        <classes>
+            <class name="com.syntax.class02.SoftAssertionDemo2"/>
+            <class name="com.syntax.class01.LoginTest"/>
+            <class name="com.syntax.class04.LoginTestEnhanced"/>
+        </classes>
+    </test>
+</suite>

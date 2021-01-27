@@ -1,0 +1,69 @@
+
+Class 03 TestNG, December 26, 2020
+
+xml file is a configuration file where we can specify which classes, emthods adn group to run. ,  we perform any configuration what we would like to run.
+And we can do batch execution with xml file.
+
+Structure:
+It is based on tags:
+
+<suite name = "Any Name" >
+    <test name = "Any Name">
+        <packages>
+            <classes>
+                <class name = "com.syntax.class2.HW">
+                    <methods>
+                        <exclude name = "logoValidation/>" // this method will be excluded from execution
+                    </methods>
+                </class>
+            </classes>
+        </packages>
+    </test>
+</suite>
+----------------------------------
+
+Assertions
+
+2 types = hard and soft
+
+Assertiosn are our validation points.
+Hard => if assertion fails, then the execution will stop right away. It comes from Assert Class
+Soft => collects all the failures and then at the end we need to call method => .assertAll().
+It comes from SoftAssert and we need to create Object.
+
+@Test(dependsOnMethods=" which method")
+
+@Test(dependsOnMethods="turnOn")
+public void turnOff(){
+...................
+}
+
+@Test
+public void turnOn(){
+...................
+}
+
+why we use enabled: to skip
+enable = false = > means do not run
+
+if enable = true  => means run
+
+HW:
+
+mark some test as smoke and regression and run
+
+TC 1: HRMS Add Employee:
+
+Open chrome browser
+Go to HRMS
+Login into the application
+Add 5 different Employees and create login credentials by providing:
+First Name
+Last Name
+Username
+Password
+Verify Employee has been added successfully and take screenshot (you must have 5 different screenshots)
+Close the browser
+Specify group for this test case, add it into specific suite and execute from xml file.
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+    <test name="Regression Test">
+        <!-- we specify which groups we want to run-->
+        <groups>
+            <run>
+                <include name = "regression"/>
+            </run>
+        </groups>
+        <!-- we specify where to look/ which packaged we want to run -->
+        <packages>
+                <package name="com.syntax.class01"/>
+                <package name="com.syntax.class02"/>
+                <package name="com.syntax.class03"/>
+        </packages>
+    </test>
+</suite>
